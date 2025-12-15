@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+#game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#display-number {
+    /* フラッシュ暗算の数字を大きく、中央に表示 */
+    font-size: 80px; 
+    font-weight: bold;
+    color: #333;
+    height: 120px; /* 高さを確保してレイアウトが崩れないように */
+    line-height: 120px;
+    margin: 20px 0;
+}
+
+#message {
+    font-size: 24px;
+    color: #e44d26;
+    height: 40px;
+}
+
+/* その他のスタイル (ボタン、入力フィールドなど) */
+input, button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
