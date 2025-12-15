@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>フラッシュXOR算</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <div id="game-container">
+        
+        <div id="settings-screen">
+            <h1>フラッシュXOR算 設定</h1>
+            <label for="bits">桁数:</label>
+            <input type="number" id="bits" value="8" min="4" max="16"><br>
+            
+            <label for="terms">表示数:</label>
+            <input type="number" id="terms" value="10" min="3" max="20"><br>
+            
+            <label for="speed">スピード (秒):</label>
+            <input type="number" id="speed" value="0.5" step="0.1" min="0.1" max="2.0"><br>
+            
+            <button id="start-button">ゲームスタート</button>
+        </div>
+
+        <div id="play-screen" style="display: none;">
+            <div id="display-number"></div> 
+            
+            <div id="message"></div>
+            
+            <div id="answer-area" style="display: none;">
+                <input type="text" id="user-answer" maxlength="16" placeholder="答えを入力 (例: 0101)">
+                <button id="submit-button">回答</button>
+            </div>
+            
+            <div id="timer">経過時間: 0.00秒</div>
+        </div>
+
+        <div id="result-screen" style="display: none;">
+            <h2>結果</h2>
+            <p id="result-text"></p>
+            <p id="correct-answer"></p>
+            <p id="time-taken"></p>
+            <button id="retry-button">もう一度</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> </body>
+</html>
